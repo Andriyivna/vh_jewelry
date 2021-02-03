@@ -11,6 +11,9 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+        <div class="twig_divider">
+            <img alt="" src="<?php bloginfo('template_url'); ?>/img/twig.png">
+        </div>
 
 		<?php
 		while ( have_posts() ) :

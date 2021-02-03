@@ -25,6 +25,25 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'vh_jewelry' ), 'vh_jewelry', '<a href="https://github.com/Andriyivna">Viktoria Herman</a>' );
 				?>
 		</div><!-- .site-info -->
+        <hr class="theme-divider">
+        <hr class="theme-divider">
+        <div class="footer-content">
+            <?php the_custom_logo(); ?>
+
+            <nav  class="social-navigation">
+                <!--            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">--><?php //esc_html_e( 'Primary Menu', 'vh_jewelry' ); ?><!--</button>-->
+                <?php
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'menu-2',
+                        'menu_id'        => 'social-menu',
+                        'container_class'=> 'stack-on-mobile'
+                    )
+                );
+                ?>
+        </div>
+
+        </nav><!-- #site-navigation -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

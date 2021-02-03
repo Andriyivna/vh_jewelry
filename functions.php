@@ -51,6 +51,8 @@ if ( ! function_exists( 'vh_jewelry_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'vh_jewelry' ),
+                'menu-2' => esc_html__( 'Footer-menu', 'vh_jewelry' ),
+
 			)
 		);
 
@@ -141,7 +143,10 @@ add_action( 'widgets_init', 'vh_jewelry_widgets_init' );
  */
 function vh_jewelry_scripts() {
 	wp_enqueue_style( 'vh_jewelry-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'vh_jewelry-style', 'rtl', 'replace' );
+    wp_enqueue_style('vh_jewelry-fonts', '//fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    wp_enqueue_style( 'font-awesome', '//use.fontawesome.com/releases/v5.15.2/css/all.css' );
+
+    wp_style_add_data( 'vh_jewelry-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'vh_jewelry-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
