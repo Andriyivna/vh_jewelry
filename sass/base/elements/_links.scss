@@ -1,8 +1,8 @@
 a {
 	color: $color__link;
+	text-decoration: none;
 
 	&:visited {
-		color: $color__link-visited;
 	}
 
 	&:hover,
@@ -19,4 +19,10 @@ a {
 	&:active {
 		outline: 0;
 	}
+
+}
+.cat-links,
+.comments-link,
+.edit-link {
+	display: none;
 }

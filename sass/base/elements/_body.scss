@@ -2,6 +2,10 @@ body {
 	background: $color__background-body; // Fallback for when there is no custom background color defined.
 }
 .site {
+	max-width: $big-divider;
+	margin: 0 auto;
+}
+.site-main{
 	max-width: $main-content-width;
 	margin: 0 auto;
 }

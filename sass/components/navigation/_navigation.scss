@@ -41,9 +41,9 @@
 		li {
 			&:hover > ul,
 			&.focus > ul {
-
 				display: block;
 				left: 100%;
+
 
 			}
 		}
@@ -55,11 +55,17 @@
 
 		:hover > a,
 		.focus > a {
-
 		}
+
+
+		:hover > a:after{
+			transform: rotate(-90deg);
+		}
+
 
 		a:hover,
 		a.focus {
+
 		}
 	}
 
@@ -71,6 +77,8 @@
 	li:hover > ul,
 	li.focus > ul {
 		left: auto;
+
+
 	}
 
 	li {
@@ -79,6 +87,7 @@
 
 		&:hover > a,
 		&.focus > a {
+
 		}
 	}
 
@@ -93,6 +102,10 @@
 	}
 }
 
+
+
+
+
 li.menu-item-has-children	{
 	> a:after	{
 		content: "\f078";
@@ -105,6 +118,8 @@ li.menu-item-has-children	{
 		line-height: 1;
 		font-weight: 900;
 		padding-left: 5px;
+		transition: transform 0.4s;
+
 	}
 
 }

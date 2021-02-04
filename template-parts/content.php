@@ -11,6 +11,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+        <div class="twig_divider">
+            <img alt="" src="<?php bloginfo('template_url'); ?>/img/twig.png">
+        </div>
 
 		<?php
 		if ( is_singular() ) :
@@ -21,6 +24,9 @@
 
 		if ( 'post' === get_post_type() ) :
 			?>
+
+            <?php vh_jewelry_post_thumbnail(); ?>
+
             <div class="entry-meta">
 				<?php
 				vh_jewelry_posted_on();
@@ -29,8 +35,6 @@
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<?php vh_jewelry_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -48,7 +52,12 @@
 				wp_kses_post( get_the_title() )
 			)
 		);
-
+        ?>
+        <div class="post-divider">
+            <hr class="theme-divider">
+            <hr class="theme-divider">
+        </div>
+        <?php
 		wp_link_pages(
 			array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'vh_jewelry' ),

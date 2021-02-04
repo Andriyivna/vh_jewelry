@@ -413,7 +413,11 @@ body {
   background: #fff; }
 
 .site {
-  max-width: 892px;
+  max-width: 1035px;
+  margin: 0 auto; }
+
+.site-main {
+  max-width: 674px;
   margin: 0 auto; }
 
 .theme-divider {
@@ -421,6 +425,9 @@ body {
   border: 0;
   height: 1px;
   margin: 4px auto; }
+
+.post-divider {
+  padding: 10px 0 20px 0; }
 
 ul,
 ol {
@@ -463,15 +470,19 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-  color: #000000; }
-  a:visited {
-    color: #800080; }
+  color: #000000;
+  text-decoration: none; }
   a:hover, a:focus, a:active {
     color: #3f5a2f; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
     outline: 0; }
+
+.cat-links,
+.comments-link,
+.edit-link {
+  display: none; }
 
 /* Forms
 --------------------------------------------- */
@@ -588,6 +599,8 @@ textarea {
     .menu ul a {
       width: 200px;
       padding: 10px 20px; }
+    .menu ul :hover > a:after {
+      transform: rotate(-90deg); }
   .menu li:hover > ul,
   .menu li.focus > ul {
     left: auto; }
@@ -607,7 +620,8 @@ li.menu-item-has-children > a:after {
   text-rendering: auto;
   line-height: 1;
   font-weight: 900;
-  padding-left: 5px; }
+  padding-left: 5px;
+  transition: transform 0.4s; }
 
 /* Small menu. */
 .menu-toggle,
@@ -691,6 +705,9 @@ li.menu-item-has-children > a:after {
 
 .bypostauthor {
   display: block; }
+
+.comments-area {
+  display: none; }
 
 /* Widgets
 --------------------------------------------- */

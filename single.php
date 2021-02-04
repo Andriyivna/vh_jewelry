@@ -11,9 +11,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-        <div class="twig_divider">
-            <img alt="" src="<?php bloginfo('template_url'); ?>/img/twig.png">
-        </div>
+
 
 		<?php
 		while ( have_posts() ) :
@@ -21,10 +19,10 @@ get_header();
 
 			get_template_part( 'template-parts/content', get_post_type() );
 
-			the_post_navigation(
+            the_post_navigation(
 				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'vh_jewelry' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'vh_jewelry' ) . '</span> <span class="nav-title">%title</span>',
+					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Preview Post', 'vh_jewelry' ) . '</span> <span class="nav-title">%title</span>',
+					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next Post', 'vh_jewelry' ) . '</span> <span class="nav-title">%title</span>',
 				)
 			);
 
@@ -35,6 +33,7 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
+
 
 	</main><!-- #main -->
 
