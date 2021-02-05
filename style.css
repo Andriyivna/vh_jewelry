@@ -427,7 +427,7 @@ body {
   margin: 4px auto; }
 
 .post-divider {
-  padding: 10px 0 20px 0; }
+  padding: 50px 0 20px 0; }
 
 ul,
 ol {
@@ -483,6 +483,14 @@ a {
 .comments-link,
 .edit-link {
   display: none; }
+
+.more-link {
+  background-color: #3f5a2f;
+  padding: 15px 40px;
+  color: #ffffff; }
+
+.more-link:hover {
+  color: #ffffff; }
 
 /* Forms
 --------------------------------------------- */
@@ -666,6 +674,53 @@ li.menu-item-has-children > a:after {
     display: flex; }
   .stack-on-mobile .menu {
     flex-direction: row; } }
+
+.prev {
+  font-size: 0; }
+
+.next {
+  font-size: 0; }
+
+.pagination {
+  margin: 10px 0 70px 0;
+  display: flex;
+  align-items: center; }
+  .pagination .next:after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-weight: 900;
+    padding-left: 5px;
+    font-size: 20px;
+    color: #7d7d7d;
+    padding-left: 30px; }
+
+.page-numbers {
+  padding: 5px; }
+
+.pagination .prev:before {
+  content: "\f053";
+  font-family: "Font Awesome 5 Free";
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-weight: 900;
+  padding-left: 5px;
+  font-size: 20px;
+  color: #7d7d7d;
+  padding-right: 30px; }
+
+.current {
+  background-color: #f5f4f2;
+  padding: 5px 12px; }
 
 /* Posts and pages
 --------------------------------------------- */

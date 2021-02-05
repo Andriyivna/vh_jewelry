@@ -42,7 +42,7 @@
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'vh_jewelry' ),
+					__( 'READ POST<span class="screen-reader-text"> "%s"</span>', 'vh_jewelry' ),
 					array(
 						'span' => array(
 							'class' => array(),

@@ -39,10 +39,12 @@ get_header();
                  */
 				get_template_part( 'template-parts/content', get_post_type() );
 
-			endwhile;
+			endwhile; ?>
 
-			the_posts_navigation();
-
+            <nav class="pagination">
+                <?php vh_jewelry_pagination_bar(); ?>
+             </nav>
+        <?php
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );

@@ -182,3 +182,57 @@ li.menu-item-has-children	{
 		}
 	}
 }
+
+.prev {
+	font-size: 0;
+}
+.next {
+	font-size: 0;
+}
+.pagination {
+	margin: 10px 0 70px 0;
+	display: flex;
+	align-items: center;
+	.next:after{
+		content: "\f054";
+		font-family: "Font Awesome 5 Free";
+		-webkit-font-smoothing: antialiased;
+		display: inline-block;
+		font-style: normal;
+		font-variant: normal;
+		text-rendering: auto;
+		line-height: 1;
+		font-weight: 900;
+		padding-left: 5px;
+		font-size: 20px;
+		color: #7d7d7d;
+		padding-left: 30px;
+	}
+}
+
+.page-numbers {
+	padding: 5px;
+}
+
+.pagination {
+	.prev:before {
+		content: "\f053";
+		font-family: "Font Awesome 5 Free";
+		-webkit-font-smoothing: antialiased;
+		display: inline-block;
+		font-style: normal;
+		font-variant: normal;
+		text-rendering: auto;
+		line-height: 1;
+		font-weight: 900;
+		padding-left: 5px;
+		font-size: 20px;
+		color: #7d7d7d;
+		padding-right: 30px;
+	}
+
+}
+.current {
+	background-color: #f5f4f2;
+	padding: 5px 12px;
+}

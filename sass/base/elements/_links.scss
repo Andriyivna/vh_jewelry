@@ -26,3 +26,11 @@ a {
 .edit-link {
 	display: none;
 }
+.more-link{
+	background-color: $color__main_green;
+	padding: 15px 40px;
+	color: #ffffff;
+}
+.more-link:hover {
+	color: #ffffff;
+}
